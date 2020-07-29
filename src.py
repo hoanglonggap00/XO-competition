@@ -10,7 +10,7 @@ def check_Ox(data):
         if int(data[i][0]) + 1 == int(data[i + 1][0]) and int(data[i + 1][0]) + 1 == int(data[i + 2][0]) and int(data[i + 2][0]) + 1 == int(data[i + 3][0]) and int(data[i + 3][0]) + 1 == int(data[i + 4][0]):
             linh1 = i
             return True
-            break;
+            break
         else:
             return False
 
@@ -20,7 +20,7 @@ def check_Oy(data):
         if int(data[j][1]) + 1 == int(data[j + 1][1]) and int(data[j + 1][1]) + 1 == int(data[j + 2][1]) and int(data[j + 2][1]) + 1 == int(data[j + 3][1]) and int(data[j + 3][1]) + 1 == int(data[j + 4][1]):
             linh2 = j
             return True
-            break;
+            break
         else:
             return False
 
@@ -59,7 +59,7 @@ while True:
     data_player_1.append(x1)
     if check_win(data_player_1):
         print("X win")
-        break;
+        break
 
     x2 = input('O: ').split(' ')
     if x2:
@@ -69,7 +69,4 @@ while True:
     data_player_2.append(x2)
     if check_win(data_player_2):
         print("O win")
-        break;
-
-
-
+        break
